@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+        //Number checker number positive or negative
+       let number = Number(prompt("Enter a number:"))
+        if(number==0){
+           console.log("number is zero")
+        }else if(number>0){
+           console.log("positive")
+        }else{
+           console.log("negative")
+        }
+    </script>
+    <script>
+        //multiplication table 
+       let num = Number(prompt("Enter a number:"))
+       for(let i = 1;i<=10;i++){
+           console.log(num,"*",i,"=",num*i)
+       }
+    </script>
+    <script>
+       // print even number
+        for(i=1;i<=20;i++){
+            if(i%2==0){
+                console.log(i)
+            }
+        }
+    </script>
+    <script>
+
+       let num = parseInt(prompt("Enter a number:"));
+        let sum = 0;
+
+        do {
+          let digit = num % 10;
+         sum = sum + digit;
+         num = Math.floor(num / 10);
+        } while (num > 0);
+
+        console.log("Sum of digits =", sum);
+        
+    </script>
+    <script>
+       print odd number
+       for(i=1;i<=10;i++){
+        if(i%2!=0){
+            console.log(i)
+        }
+       }
+    </script>
+    <script>
+        for(i=1;i<=50;i++){
+            if(i%3 ==0 && i%5==0){
+                console.log("fizzbuzz");
+            }else if(i%3==0){
+                console.log("Fizz");
+            }else if(i%5==0){
+                console.log("Bizz");
+            }
+            else{
+                console.log(i);
+            }
+        }
+    </script>
+    <script>
+        let num = Number(prompt("Enter a number:"))
+        let prime = true;
+        if(num<=1){
+            prime=false;
+        }else{
+            for(let i= 2;i<num;i++){
+                if (num % i == 0) {
+                prime = false;
+                break;
+            }
+            }
+        }
+        if (prime) {
+             console.log(num + " is a Prime Number");
+        } else {
+             console.log(num + " is Not a Prime Number");
+        }
+    </script>
+    <script>
+        //prime number
+        let a = Number(prompt("Enter the first number:"))
+        let b = Number(prompt("Enter the second number:"))
+        let c = Number(prompt("Enter the thrid number:"))
+        if(a>=b && a>=c){
+            console.log(a,"is the largest number");
+        }else if(b>=a && b>=c){
+            console.log(b,"the largest number");
+        }else{
+            console.log(c,"the largest number");
+        }
+    </script>
+    <script>
+        //palindrom checker
+        let str = prompt("Enter a string");
+        let reverse ="";
+        for(let i=str.length-1;i>=0;i--){
+            reverse=reverse+str[i];
+        }
+        if (str == reverse) {
+        console.log(str + " is a Palindrome");
+        } else {
+         console.log(str + " is Not a Palindrome");
+        }
+    </script>
+    <script>
+        //reverse number
+        let num = Number(prompt("Enter a number:"));
+        let reverse = 0;
+
+        while (num > 0) {
+        let digit = num % 10;
+        reverse = reverse * 10 + digit;
+        num = Math.floor(num / 10);
+        }
+
+         console.log("Reverse Number =", reverse);
+    </script>
+</body>
+</html>
